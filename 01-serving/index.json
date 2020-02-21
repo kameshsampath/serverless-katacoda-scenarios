@@ -35,7 +35,7 @@
         }
     },
     "assets": {
-        "host01": [
+        "client": [
             {
                 "file": "cr.yml",
                 "target": "~/cr.yaml"
