@@ -1,10 +1,11 @@
 #!/bin/bash
 
-set -eu
+set -e
 
 set -o pipefail 
 
 NO_COLOR=${NO_COLOR:-""}
+
 if [ -z "$NO_COLOR" ]; then
   header=$'\e[1;33m'
   reset=$'\e[0m'
