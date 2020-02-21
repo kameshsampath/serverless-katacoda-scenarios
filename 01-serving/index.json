@@ -35,10 +35,9 @@
     }
   },
   "assets": {
-    "client": [
+    "host01": [
       {
-        "file": "*",
-        "target": "/root"
+        "file": "cr.yaml","target": "/etc/knative-serving/cr.yaml"
       }
     ]
   }

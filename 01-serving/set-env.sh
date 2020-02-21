@@ -4,7 +4,7 @@ set -o pipefail
 
 echo "Installing OpenShift Serverless"
 
-ls -ltr /root
+ls -ltr /etc/knative-serving
 
 # [[ -f /root/redhat-operators-csc.yaml ]] && oc create -f /root/redhat-operators-csc.yaml
 
