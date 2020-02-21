@@ -1,0 +1,37 @@
+{
+    "icon": "fa-openshift",
+    "title": "Developing with Serverless",
+    "description": "",
+    "pathwayTitle": "OpenShift",
+    "difficulty": "beginner",
+    "time": "10-15 minutes",
+    "backend": {
+        "imageid": "openshift-4-2"
+    },
+    "environment": {
+        "showdashboard": true,
+        "dashboards": [
+            {
+                "name": "Console",
+                "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com"
+            }
+        ],
+        "uilayout": "terminal-iframe"
+    },
+    "details": {
+        "intro": {
+            "courseData": "env-init.sh",
+            "text": "intro.md",
+            "code": "set-env.sh"
+        },
+        "steps": [
+            {
+                "title": "Get Started",
+                "text": "00-intro.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    }
+}
