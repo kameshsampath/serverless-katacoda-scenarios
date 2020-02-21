@@ -1,33 +1,23 @@
 #!/bin/bash
 
-set -e
-
 set -o pipefail 
 
-NO_COLOR=${NO_COLOR:-""}
+echo "Installing OpenShift Serverless"
 
-if [ -z "$NO_COLOR" ]; then
-  header=$'\e[1;33m'
-  reset=$'\e[0m'
-else
-  header=''
-  reset=''
-fi
+ls -ltr /root
 
-function header_text {
-  echo "$header$*$reset"
-}
+# [[ -f /root/redhat-operators-csc.yaml ]] && oc create -f /root/redhat-operators-csc.yaml
 
-header_text "Setting up knative"
+# sleep 30
 
-ls -ltr ~/
-[[ -f ~/redhat-operators-csc.yaml ]] && oc create -f ~/redhat-operators-csc.yaml
-sleep 120
-! oc adm new-project knative-serving
-[[ -f ~/subscription.yaml ]] && oc apply -f ~/subscription.yaml 
-sleep 120
-[[ -f ~/knative-serving/cr.yaml ]] && oc apply -f ~/knative-serving/cr.yaml
+# ! oc adm new-project knative-serving
 
-header_text "Waiting for Knative Serving Pods to comeup"
+# [[ -f /root/subscription.yaml ]] && oc apply -f /root/subscription.yaml 
 
-sleep 5; while echo && oc get pods -n knative-serving | grep -v -E "(Running|Completed|STATUS)"; do sleep 5; done
+# sleep 120
+
+# [[ -f /root/knative-serving/cr.yaml ]] && oc apply -f /root/knative-serving/cr.yaml
+
+# echo "Waiting for Knative Serving Pods to comeup"
+
+# sleep 5; while echo && oc get pods -n knative-serving | grep -v -E "(Running|Completed|STATUS)"; do sleep 5; done
