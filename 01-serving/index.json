@@ -21,7 +21,7 @@
     "details": {
         "intro": {
             "courseData": "env-init.sh",
-            "text": "intro.md",
+            "text": "00-intro.md",
             "code": "set-env.sh"
         },
         "steps": [
