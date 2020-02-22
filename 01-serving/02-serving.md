@@ -12,7 +12,7 @@ Open the file **02-serving/service.yaml** `/root/02-serving/service.yaml`{{open}
 
 Lets clear our terminal `clear`{{execute interrupt}} before running our exercises.
 
-To deploy the service execute `oc apply -n knativetutorial -f basics/service.yaml`{{execute}}
+To deploy the service execute `oc apply -n knativetutorial -f /root/02-serving/service.yaml`{{execute}}
 
 As it will take some time for the service to come up you can watch the status using the command `oc get -n knativetutorial get pods -w`{{execute}}
 
