@@ -1,14 +1,13 @@
 #!/bin/bash
 set -o pipefail 
 
-rm -rf /root/projects 
+rm -rf ~/projects 
 
-mkdir -p /root/projects
-
-pushd /root/projects
+mkdir -p ~/projects && pushd ~/projects
 
 git clone https://github.com/redhat-developer-demos/knative-tutorial.git
 pushd knative-tutorial 
+
 # remove all directories except basics/scaling
 rm -rf .git* && rm -rf !("basics"|"scaling")
 
