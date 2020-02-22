@@ -52,8 +52,8 @@
     "assets": {
       "host01": [
         {
-          "file": "basics/*",
-          "target": "/root/basics"
+          "file": "02-serving/service.yaml",
+          "target": "/root/02-serving/service.yaml"
         }
       ]
     }

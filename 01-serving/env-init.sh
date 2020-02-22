@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "Environment init"
-
 set -o pipefail 
+
+mkdir -p /root/{02-serving,03-traffic-distribution,04-scaling}
 
 echo "Installing OpenShift Serverless"
 
