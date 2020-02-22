@@ -52,8 +52,16 @@
     "assets": {
       "client": [
         {
-          "file": "02-serving/service.yaml",
-          "target": "/root/02-serving/service.yaml"
+          "file": "02-serving/*",
+          "target": "/root/02-serving/"
+        },
+        {
+          "file": "03-traffic-distribution/*",
+          "target": "/root/03-traffic-distribution/"
+        },
+        {
+          "file": "04-scaling/*",
+          "target": "/root/04-scaling/"
         }
       ]
     }

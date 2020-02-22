@@ -1,12 +1,10 @@
-# Deploying your Service
-
-At the end of this chapter you will be able to  deploy your very first application as Knative service using OpenShift Severless.
+At the end of this chapter you will be able to  deploy your very first application as Knative service using OpenShift Serverless.
 
 ## Explore the Service
 
 Before you deploy the serverless service, let us take a moment to  understand its structure
 
-Open the file **basics/service.yaml** `/root/basics/service.yaml`{{open}}
+Open the file **02-serving/service.yaml** `/root/02-serving/service.yaml`{{open}}
 
 /*TODO some explanation about the service yaml*/
 
@@ -28,19 +26,19 @@ The Knative Service deployment will create many Knative resources, the following
 
 ### service
 
-`oc apply -n knativetutorial services.serving.knative.dev`{{execute}}
+`oc get -n knativetutorial services.serving.knative.dev`{{execute}}
 
 ### configuration
 
-`oc apply -n knativetutorial configurations.serving.knative.dev`{{execute}}
+`oc get -n knativetutorial configurations.serving.knative.dev`{{execute}}
 
 ### revisions
 
-`oc apply -n knativetutorial revisions.serving.knative.dev`{{execute}}
+`oc get -n knativetutorial revisions.serving.knative.dev`{{execute}}
 
 ### routes
 
-`oc apply -n knativetutorial routes.serving.knative.dev`{{execute}}
+`oc get -n knativetutorial routes.serving.knative.dev`{{execute}}
 
 ## Invoke the service
 
@@ -55,5 +53,7 @@ The `greeter` service will automatically scale down to zero if it does not get r
 /*TODO screen shot of OpenShift Developer Console*/
 
 Try invoking the service again as you did earlier to see the service scaling up.
+
+## Delete the Service
 
 Awesome! You have successfully deployed your very first serverless service using OpenShift serverless. In next chapter we go a bit deep in understanding how to distribute traffic between multiple revisions of same service.
