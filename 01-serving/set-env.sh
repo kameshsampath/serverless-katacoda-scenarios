@@ -4,7 +4,7 @@ mkdir -p ~/projects && cd ~/projects
 
 git clone https://github.com/redhat-developer-demos/knative-tutorial
 
-pushd knative-tutorial
+pushd knative-tutorial > /dev/null
 
 rm -rf .git* && rm -rf !("basics"|"scaling")
 
