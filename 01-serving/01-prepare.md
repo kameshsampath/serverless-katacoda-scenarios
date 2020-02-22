@@ -11,6 +11,6 @@ To deploy the exercises, you need to use `developer` user. Login as developer us
 
 ## Tutorial project
 
-All the exercises will be deployed into an OpenShift project called `knativetutorial`, you can create the project by running executing the command  `oc new-project knativetutorial`{{execute T1}}
+All the exercises will be deployed into an OpenShift project called `knativetutorial`, navigate to the project by executing the command  `oc project knativetutorial`{{execute T1}}
 
 There we go! You are all set to kickstart your serverless journey with **OpenShift Serverless**. Click continue to go to next module on how to deploy your first severless service.
