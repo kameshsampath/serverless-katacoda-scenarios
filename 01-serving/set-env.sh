@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/projects/knative-tutorial
+cd /root/projects/knative-tutorial
 
 echo "Wait for Knative Serving Pods are up and Running"
 

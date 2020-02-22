@@ -1,11 +1,11 @@
 #!/bin/bash
 set -o pipefail 
 
-rm -rf ~/projects 
+rm -rf /root/projects 
 
-mkdir -p ~/projects
+mkdir -p /root/projects
 
-pushd ~/projects
+pushd /root/projects
 
 git clone https://github.com/redhat-developer-demos/knative-tutorial.git
 pushd knative-tutorial 
