@@ -6,9 +6,9 @@ At the end of this chapter you will be able to  deploy your very first applicati
 
 Before you deploy the serverless service, let us take a moment to  understand its structure
 
-Open the file `basics/service.yaml` /root/basics/service.yaml{{open}}
+Open the file **basics/service.yaml** `/root/basics/service.yaml`{{open}}
 
-/*TODO some explnation about the service yaml*/
+/*TODO some explanation about the service yaml*/
 
 ## Deploy the service
 
