@@ -50,7 +50,7 @@
       "text": "99-outro.md"
     },
     "assets": {
-      "host01": [
+      "client": [
         {
           "file": "02-serving/service.yaml",
           "target": "/root/02-serving/service.yaml"
