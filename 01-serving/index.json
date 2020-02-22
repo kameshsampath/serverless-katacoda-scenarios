@@ -57,7 +57,7 @@
       "text": "99-outro.md"
     },
     "assets": {
-      "client": [
+      "host01": [
         {
           "file": "02-serving/*",
           "target": "/root/02-serving/"

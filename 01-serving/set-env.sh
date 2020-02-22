@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# mkdir -p /root/{02-serving,03-traffic-distribution,04-scaling}
+
 
 echo "Wait for Knative Serving Pods are up and Running"
 
