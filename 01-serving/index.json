@@ -48,13 +48,14 @@
     ],
     "finish": {
       "text": "99-outro.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*",
+          "target": "/root"
+        }
+      ]
     }
-  },
-  "assets": {
-    "host01": [
-      {
-        "file": "*","target": "/root"
-      }
-    ]
-  }
+  }  
 }

@@ -2,7 +2,7 @@
 
 At the end of this chapter you will be able to  deploy your very first application as Knative service using OpenShift Severless.
 
-## Expolore the Service
+## Explore the Service
 
 Before you deploy the serverless service, let us take a moment to  understand its structure
 

@@ -1,7 +1,4 @@
-# Preparing Exercises Environment
-
-
-## Verify Installation
+# Verify Installation
 
 Check all pods are running in `knative-serving` namespace by executing the command `oc get -n knative-serving pods`{{execute T1}}
 
