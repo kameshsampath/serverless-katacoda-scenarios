@@ -57,21 +57,6 @@
     "finish": {
       "text": "99-outro.md"
     },
-    "assets": {
-      "client": [
-        {
-          "file": "02-serving/*",
-          "target": "~/projects/knative-tutorial/02-serving/"
-        },
-        {
-          "file": "03-traffic-distribution/*",
-          "target": "~/projects/knative-tutorial/03-traffic-distribution/"
-        },
-        {
-          "file": "04-scaling/*",
-          "target": "~/projects/knative-tutorial/04-scaling/"
-        }
-      ]
-    }
+    "assets": {}
   }  
 }

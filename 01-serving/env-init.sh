@@ -19,3 +19,11 @@ sleep 30
 
 oc adm new-project knativetutorial
 oc adm policy add-role-to-user admin developer -n knativetutorial
+
+rm -rf /root/projects 
+
+mkdir /root/projects && cd root/projects
+git clone https://github.com/redhat-developer-demos/knative-tutorial.git
+pushd knative-tutorial 
+# remove all directories except basics/scaling
+rm -rf .git* && rm -vrf !("basics"|"scaling")
