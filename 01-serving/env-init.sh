@@ -1,8 +1,6 @@
 #!/bin/bash
 set -o pipefail 
 
-mkdir -p /root/{02-serving,03-traffic-distribution,04-scaling}
-
 echo "Installing OpenShift Serverless"
 
 oc create -f https://raw.githubusercontent.com/redhat-developer-demos/guru-night/master/config/redhat-operators-csc.yaml

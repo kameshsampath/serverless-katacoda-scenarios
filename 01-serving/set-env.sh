@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+mkdir -p ~/projects/knative-tutorial/{02-basics,03-traffic-distribution,04-scaling} && cd ~/projects/knative-tutorial/02-basics
 
 echo "Wait for Knative Serving Pods are up and Running"
 

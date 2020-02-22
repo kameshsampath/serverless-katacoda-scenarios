@@ -21,6 +21,7 @@
       }
     ],
     "uilayout": "editor-terminal",
+    "uieditorpath": "/root/projects/knative-tutorial",
     "uisettings": "java",
     "hideintro": false,
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
@@ -57,18 +58,18 @@
       "text": "99-outro.md"
     },
     "assets": {
-      "host01": [
+      "client": [
         {
           "file": "02-serving/*",
-          "target": "/root/02-serving/"
+          "target": "~/projects/knative-tutorial/02-serving/"
         },
         {
           "file": "03-traffic-distribution/*",
-          "target": "/root/03-traffic-distribution/"
+          "target": "~/projects/knative-tutorial/03-traffic-distribution/"
         },
         {
           "file": "04-scaling/*",
-          "target": "/root/04-scaling/"
+          "target": "~/projects/knative-tutorial/04-scaling/"
         }
       ]
     }
