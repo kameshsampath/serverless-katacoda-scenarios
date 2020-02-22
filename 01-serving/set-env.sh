@@ -1,8 +1,11 @@
 #!/bin/bash
 
-mkdir -p ~/projects/knative-tutorial && cd ~/projects/knative-tutorial
+mkdir -p ~/projects && cd ~/projects
 
-echo "Wait for Knative Serving Pods are up and Running"
+git clone https://github.com/redhat-developer-demos/knative-tutorial
+
+pushd knative-tutorial
+
+rm -rf .git* && rm -rf !("basics"|"scaling")
 
 sleep 150; while echo && oc get pods -n knative-serving | grep -v -E "(Running|Completed|STATUS)"; do sleep 20; done
-
