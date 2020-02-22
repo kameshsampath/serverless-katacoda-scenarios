@@ -1,7 +1,7 @@
 {
   "icon": "fa-openshift",
-  "title": "Developing with Serverless",
-  "description": "",
+  "title": "Serving with OpenShift Serverless",
+  "description": "Understanding and developing OpenShift Serverless",
   "pathwayTitle": "OpenShift",
   "difficulty": "beginner",
   "time": "10-15 minutes",
@@ -26,8 +26,20 @@
     },
     "steps": [
       {
-        "title": "Get Started",
-        "text": "00-intro.md"
+        "title": "Deploying your service",
+        "text": "01-serving.md"
+      },
+      {
+        "title": "Traffic Distribution",
+        "text": "02-traffic-dist.md"
+      },
+      {
+        "title": "Scaling",
+        "text": "03-scaling.md"
+      },
+      {
+        "title": "Using Knative client",
+        "text": "04-knative-client.md"
       }
     ],
     "finish": {
