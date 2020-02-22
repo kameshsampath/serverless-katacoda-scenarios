@@ -57,6 +57,11 @@
     "finish": {
       "text": "99-outro.md"
     },
-    "assets": {}
+    "assets": {
+      "client":{
+         "file": "knative-tutorial/*",
+         "target": "~/projects/knative-tutorial"
+      }
+    }
   }  
 }
