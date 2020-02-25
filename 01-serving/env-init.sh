@@ -5,6 +5,8 @@ mkdir -p /root/projects && cd /root/projects/
 
 git clone https://github.com/redhat-developer-demos/knative-tutorial
 
+cd  knative-tutorial && rm -rf !("basics"|"scaling")
+
 oc create -f https://raw.githubusercontent.com/redhat-developer-demos/guru-night/master/config/redhat-operators-csc.yaml
 
 sleep 30
