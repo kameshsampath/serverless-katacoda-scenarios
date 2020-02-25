@@ -6,7 +6,7 @@ Before you deploy the serverless service, let us take a moment to  understand it
 
 Open the file **/root/projects/knative-tutorial/basics/service.yaml** `/root/projects/knative-tutorial/basics/service.yaml`{{open}}
 
-/*TODO some explanation about the service yaml*/
+TODO **some explanation about the service yaml**
 
 ## Deploy the service
 
@@ -19,7 +19,8 @@ As it will take some time for the service to come up you can watch the status us
 A successful service deployment will show the following greeter pods:
 
 ```shell
-
+NAME                                       READY   STATUS              RESTARTS   AGE
+greeter-q2j7w-deployment-55d67f957-xn5p7   0/2     ContainerCreating   0          22s
 ```
 
 ## See what you have deployed
@@ -44,7 +45,7 @@ The Knative Service deployment will create many Knative resources, the following
 
 ## Invoke the service
 
-We need to use the URL returned by knative route to invoke the service, execute the command `curl https://greeter.knativetutorial.[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com)`{{execute}}
+We need to use the URL returned by knative route to invoke the service, execute the command `curl http://greeter.knativetutorial.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
 The service will return a response like **Hi  greeter => '6fee83923a9f' : 1**
 
@@ -52,7 +53,7 @@ The service will return a response like **Hi  greeter => '6fee83923a9f' : 1**
 
 The `greeter` service will automatically scale down to zero if it does not get request for approximately 60 seconds. Try watching the service scaling down from [OpenShift Dev Console](https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com).
 
-/*TODO screen shot of OpenShift Developer Console*/
+TODO **screen shot of OpenShift Developer Console**
 
 Try invoking the service again as you did earlier to see the service scaling up.
 
