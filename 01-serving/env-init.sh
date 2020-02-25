@@ -1,6 +1,14 @@
 #!/bin/bash
 set -o pipefail 
 
+mkdir -p ~/projects && cd ~/projects
+
+git clone https://github.com/redhat-developer-demos/knative-tutorial
+
+pushd knative-tutorial > /dev/null
+
+rm -rf .git* && rm -rf !("basics"|"scaling")
+
 oc create -f https://raw.githubusercontent.com/redhat-developer-demos/guru-night/master/config/redhat-operators-csc.yaml
 
 sleep 30
