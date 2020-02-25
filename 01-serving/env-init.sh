@@ -5,6 +5,10 @@ mkdir -p /root/projects && cd /root/projects/
 
 git clone https://github.com/redhat-developer-demos/knative-tutorial
 
+sleep 10
+
+cd /root/projects/knative-tutorial && rm -rf .git* !("basics"|"scaling")
+
 oc create -f https://raw.githubusercontent.com/redhat-developer-demos/guru-night/master/config/redhat-operators-csc.yaml
 
 sleep 30
@@ -22,4 +26,3 @@ sleep 30
 oc adm new-project knativetutorial
 oc adm policy add-role-to-user admin developer -n knativetutorial
 
-cd /root/projects/knative-tutorial && rm -rf .git* !("basics"|"scaling")
