@@ -2,7 +2,7 @@
 
 Check all pods are running in `knative-serving` namespace by executing the command `oc get -n knative-serving pods`{{execute T1}}
 
-If the install was successful you should see the following pods in `knative-serving` namespace:
+If the install was successful you should see the following pods in `knative-serving` namespace with the *Status* of `Running`:
 
 ```shell
 NAME                                READY   STATUS    RESTARTS   AGE
